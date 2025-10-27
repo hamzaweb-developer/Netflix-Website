@@ -4,7 +4,7 @@ body {
     background-color: black;
 }
 .main {
-    background-image: url(Image/background.jpg);
+    background-image: url(background.jpg);
     height: 80vh;
     position: relative;
     background-position: center center;
@@ -135,4 +135,5 @@ border: 1px solid white;
         background-color: white;
         color: black;
     }
+
 }   
