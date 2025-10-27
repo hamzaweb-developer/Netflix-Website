@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.main {
+    background-image: url(Image/background.jpg);
+    height: 80vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:max(1400px, 100vw);
+}
+
+.main .box {
+    opacity: 0.69   ;
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+nav {
+    display: flex;
+    margin: auto;
+    max-width: 150vh;
+    justify-content:space-around;
+    align-items: center;
+    height: 62px;
+}
+nav img {
+    width:114px;
+    z-index:10;
+    position: relative;
+    transition-duration: 3s;
+}
+
+nav img:hover {
+    transform: scale(1.2);
+}
+
+
+nav button {
+    z-index:10;
+    position: relative;
+}
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.seprate {
+    height: 8px;
+    background-color: rgb(38, 38, 38);
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 10px;
+    font-weight: 500;  
+    background-color: white;
+    color: white;
+    background-color: rgba(25,25,25,0.5);
+    border-radius: 4px;
+    border: 1px solid white;
+    position: relative;
+    cursor: pointer;
+}
+
+.red-btn {
+background-color: red;
+color: white;
+border-radius: 4px;
+font-size: 20px;
+padding: 3px 24
+px;
+}
+
+.btn-red-sm {
+    background-color: red;
+}
+
+.main input {
+    border-radius: 4px;
+font-size: 12px;
+padding: 7px 101px 8px 14px;
+font-weight: 900;
+background-color: rgb(23,23,23,0.7);
+color: white;
+border: 1px solid white;
+}
+
+.inputbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-weight: bolder;
+}
+
+.inputbar input {
+    animation: inputanimation 0.8s  alternate infinite forwards;
+}
+@keyframes inputanimation {
+    to {
+
+    }
+    from {
+        background-color: white;
+        color: black;
+    }
+}   
